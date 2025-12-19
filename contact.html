@@ -1,0 +1,120 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title> 
+    <link rel="stylesheet" href="styles.css">
+<style>
+
+
+    .contact-card
+ { 
+     background: #ffffff;
+  padding: 50px;
+  border-radius: 100px;
+  width: 1000%;
+  height: 2000%;
+  max-width: 1000px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+
+ }
+
+
+    { border-radius: 10px;
+padding: 10px 12px;
+}
+
+
+.btn-send {
+background: #0b1c4d;
+color: #fff;
+border-radius: 10px;
+padding: 10px;
+font-weight: 500;
+}
+
+
+.btn-send:hover {
+background: #09163d;
+}
+
+
+.success-msg {
+display: none;
+font-size: 14px;
+color: green;
+text-align: center;
+margin-top: 15px;
+}
+
+
+.contact-footer {
+text-align: center;
+font-size: 12px;
+color: #6c757d;
+margin-top: 15px;
+}
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  background: #f2f5f9;     
+  
+}
+
+.logo {
+  position: fixed;     
+  top: 20px;
+  left: 20px;
+  width: 60px;          
+  height: auto;
+}
+
+
+</style>
+</head>
+<body>
+<img src="OB_LOGO" alt="Logo" class="logo">
+
+<div class="contact-card">
+<h3>Contact Us</h3>
+
+
+<form id="contactForm">
+<div class="row g-2">
+<div class="col-6">
+<input type="text" class="form-control" placeholder="First Name" required>
+</div>
+<div class="col-6">
+<input type="text" class="form-control" placeholder="Last Name" required>
+</div>
+</div>
+
+
+<input type="email" class="form-control mt-3" placeholder="Email" required>
+<input type="tel" class="form-control mt-3" placeholder="Phone number">
+
+
+<button type="submit" class="btn btn-send w-100 mt-4">Send</button>
+</form>
+
+
+<div class="success-msg" id="successMsg">
+Message sent successfully!
+</div>
+
+
+<div class="contact-footer">
+You may also call us through the front office.
+</div>
+</div>
+
+
+
+</body>
+</html>
